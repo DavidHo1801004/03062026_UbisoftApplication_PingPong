@@ -1,0 +1,16 @@
+{
+    "name": "LMK.CameraController2D.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fe9382a59f2ed394ca9da8dc62a369ef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

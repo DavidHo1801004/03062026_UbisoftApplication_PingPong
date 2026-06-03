@@ -1,0 +1,48 @@
+#main-container {
+	padding: 4px;
+
+	background-color: rgb(50, 50, 50);
+}
+
+
+
+#search-bar {
+	margin: 2px;
+}
+
+#popup-content {
+	padding: 2px;
+	min-width: 200px;
+
+	background-color: rgb(35, 35, 35);
+	border-radius: 2px;
+}
+
+#footer {
+	margin: 2px 0px 0px 2px;
+
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.menu-item__container {
+	flex-direction: row;
+	padding: 1px 20px 1px 0px;
+}
+.menu-item__container:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item__icon {
+	height: 15px;
+	width: 15px;
+	min-height: 15px;
+	min-width: 15px;
+	margin: 0px 2px 0px 2px;
+}
+
+.menu-item__label {
+
+}

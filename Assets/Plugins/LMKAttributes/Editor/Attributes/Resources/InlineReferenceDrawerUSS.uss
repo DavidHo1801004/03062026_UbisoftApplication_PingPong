@@ -1,0 +1,52 @@
+.unity-label {
+	-unity-text-align: middle-left;
+}
+
+#container {
+	margin-bottom: 1px;
+}
+
+#content-label,
+.content > * > .unity-foldout__toggle {
+	margin-top: 1px;
+	height: 18px;
+
+	-unity-text-align: middle-left;
+}
+#content-label {
+	margin-left: 3px;
+}
+.content > * > .unity-foldout__toggle {
+	margin-bottom: 0px;
+	margin-left: -12px;
+
+	background-color: rgb(50, 50, 50);
+}
+.content > * > .unity-foldout__toggle:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+
+.content > * > #unity-content {
+	margin: 2px 0px 5px 0px;
+	padding: 4px 6px 4px 15px;
+
+	background-color: rgba(255, 255, 255, 0.04);
+	border-radius: 0px 0px 5px 5px;
+	border-width: 2px 1px 1px 1px;
+	border-color: rgba(1, 1, 1, 0.4);
+}
+
+
+
+#type-select {
+	position: absolute;
+	width: 60%;
+	right: 0px;
+	top: 1px;
+	margin: 0px;
+}
+#type-select.invalid .unity-base-popup-field__text {
+	color: rgba(255, 255, 255, 0.3);
+}
