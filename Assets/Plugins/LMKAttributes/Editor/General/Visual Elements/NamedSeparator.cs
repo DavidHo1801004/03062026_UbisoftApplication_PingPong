@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace GASU.UIElements
+namespace LMK.UIElements
 {
     /// <summary>
     /// Display a menu item separator with a prefix label.

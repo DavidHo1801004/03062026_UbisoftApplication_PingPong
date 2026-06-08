@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GASU.Attribute
+namespace LMK.Attribute
 {
     /// <summary>
     /// Creates and serializes a per-object instance for this reference field.

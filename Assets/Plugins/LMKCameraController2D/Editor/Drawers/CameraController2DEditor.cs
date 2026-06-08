@@ -122,18 +122,19 @@ namespace LMK.CameraController2D.Editor
                 Vector2 sizeDiff = Vector2.zero;
                 Vector2 extents = asTarget.OuterBounds.size / 2;
                 Vector2 center = asTarget.OuterBounds.center;
+                Vector3 snap = EditorSnapSettings.move;
 
-                sidePos = Offset.sides[0] * extents + center;
-                sizeDiff.x -= ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, Vector3.zero, Handles.DotHandleCap) - sidePos).x;
+                sidePos = Offset.sides[Offset.LEFT] * extents + center;
+                sizeDiff.x -= ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, snap, Handles.DotHandleCap) - sidePos).x;
 
-                sidePos = Offset.sides[1] * extents + center;
-                sizeDiff.x += ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, Vector3.zero, Handles.DotHandleCap) - sidePos).x;
+                sidePos = Offset.sides[Offset.RIGHT] * extents + center;
+                sizeDiff.x += ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, snap, Handles.DotHandleCap) - sidePos).x;
 
-                sidePos = Offset.sides[2] * extents + center;
-                sizeDiff.y -= ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, Vector3.zero, Handles.DotHandleCap) - sidePos).y;
+                sidePos = Offset.sides[Offset.BOTTOM] * extents + center;
+                sizeDiff.y -= ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, snap, Handles.DotHandleCap) - sidePos).y;
 
-                sidePos = Offset.sides[3] * extents + center;
-                sizeDiff.y += ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, Vector3.zero, Handles.DotHandleCap) - sidePos).y;
+                sidePos = Offset.sides[Offset.TOP] * extents + center;
+                sizeDiff.y += ((Vector2)Handles.FreeMoveHandle(sidePos, scaleHandleSize / 25.0f, snap, Handles.DotHandleCap) - sidePos).y;
 
                 Undo.RecordObject(asTarget, "Change Bounds Size of CameraController2D");
                 asTarget.outerBounds.center -= sizeDiff / 2;
@@ -143,7 +144,7 @@ namespace LMK.CameraController2D.Editor
                 // Bounds position controls
                 Handles.color = Color.yellow;
 
-                Vector2 centerDiff = (Vector2)Handles.FreeMoveHandle(center, scaleHandleSize / 25.0f, Vector3.zero, Handles.DotHandleCap) - center;
+                Vector2 centerDiff = (Vector2)Handles.FreeMoveHandle(center, scaleHandleSize / 25.0f, snap, Handles.DotHandleCap) - center;
 
                 Undo.RecordObject(asTarget, "Change Bounds Position of CameraController2D");
                 asTarget.outerBounds.center += centerDiff;

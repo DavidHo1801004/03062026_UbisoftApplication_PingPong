@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace GASU.Utilities
+namespace Developer.Utilities
 {
     /// <summary>
     /// Custom string functions using <see cref="System.Text.RegularExpressions"/>.

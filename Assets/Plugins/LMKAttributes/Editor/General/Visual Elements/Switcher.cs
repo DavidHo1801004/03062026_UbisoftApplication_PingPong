@@ -2,7 +2,7 @@ using System;
 
 using UnityEngine.UIElements;
 
-namespace GASU.UIElements
+namespace LMK.UIElements
 {
     /// <summary>
     /// Enables simple wrapper functionality for switching visibility of child elements.

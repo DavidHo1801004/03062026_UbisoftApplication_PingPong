@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ui="UnityEngine.UIElements"
     xmlns:uie="UnityEditor.UIElements"
-    xmlns:gasu="GASU.UIElements"
+    xmlns:lmk="LMK.UIElements"
     xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
 >
 <Style src="SearchableDropdownUSS.uss"/>
     <ui:VisualElement name="main-container">
-        <gasu:SearchBar name="search-bar" placeholder-text="Search"/>
+        <lmk:SearchBar name="search-bar" placeholder-text="Search"/>
         <ui:ScrollView name="popup-content"/>
         <ui:Label name="footer"/>
     </ui:VisualElement>

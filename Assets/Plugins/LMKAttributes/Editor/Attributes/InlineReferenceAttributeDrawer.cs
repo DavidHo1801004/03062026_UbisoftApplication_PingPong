@@ -7,11 +7,11 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-using GASU.UIElements;
-using GASU.Utilities;
-using GASU.Editor.Utilities;
+using LMK.UIElements;
+using Developer.Utilities;
+using LMK.Editor.Utilities;
 
-namespace GASU.Attribute.Editor
+namespace LMK.Attribute.Editor
 {
     [CustomPropertyDrawer(typeof(InlineReferenceAttribute), true)]
     public class InlineReferenceAttributeDrawer : PropertyDrawer
@@ -90,15 +90,6 @@ namespace GASU.Attribute.Editor
                     Type selectedType = possibleTypes[index - 1];
 
                     _Property.managedReferenceValue = Activator.CreateInstance(selectedType);
-                    //try
-                    //{
-                    //    _Property.managedReferenceValue = Activator.CreateInstance(selectedType);
-                    //}
-                    //catch (Exception e)
-                    //{
-                    //    _Property.managedReferenceValue = null;
-                    //    Debug.LogError(e);
-                    //}
                 }
 
                 UpdateTypeSelectDisplay(typeSelectField, index);

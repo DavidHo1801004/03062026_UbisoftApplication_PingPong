@@ -3,15 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ui="UnityEngine.UIElements"
     xmlns:uie="UnityEditor.UIElements"
-    xmlns:gasu="GASU.UIElements"
+    xmlns:lmk="LMK.UIElements"
     xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
 >
 <Style src="InlineReferenceDrawerUSS.uss"/>
     <ui:VisualElement name="container">
-        <gasu:Switcher name="content-switcher">
+        <lmk:Switcher name="content-switcher">
             <ui:Label name="content-label"/>
             <uie:PropertyField name="property-field" class="content"/>
-        </gasu:Switcher>
+        </lmk:Switcher>
         <ui:DropdownField name="type-select"/>
     </ui:VisualElement>
 </ui:UXML>

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace GASU.UIElements
+namespace LMK.UIElements
 {
     /// <summary>
     /// Alternate wrapper display of <see cref="PlaceholderTextField"/> for search fields.

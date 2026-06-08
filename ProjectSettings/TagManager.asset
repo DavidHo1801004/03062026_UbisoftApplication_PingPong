@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Paddle
+  - Ball
   - 
   - 
   - 
@@ -41,3 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2681761667
+    locked: 0
+  - name: Player
+    uniqueID: 1175350877
+    locked: 0
+  - name: Foreground
+    uniqueID: 3788216333
+    locked: 0
+  - name: Overlay
+    uniqueID: 2763040515
+    locked: 0
+  m_RenderingLayers:
+  - Default

@@ -7,9 +7,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-using GASU.UIElements;
+using LMK.UIElements;
 
-namespace GASU.Editor.Utilities
+namespace LMK.Editor.Utilities
 {
     /// <summary>
     /// Helper class which defines a dropdown list of items with search handling.
