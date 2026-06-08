@@ -1,0 +1,18 @@
+.lmk-motor-control-module .unity-foldout__toggle {
+	margin-top: 0px;
+
+	background-color: rgb(55, 55, 55);
+	border-width: 0px 0px 1px 0px;
+	border-color: rgb(20, 20, 20);
+}
+
+.lmk-motor-control-module .unity-foldout {
+}
+
+.lmk-motor-control-module .unity-foldout__content {
+	padding: 3px 6px 3px 0px;
+	background-color: rgb(70, 70, 70);
+	border-width: 1px;
+	border-color: rgba(30, 30, 30, 0.5);
+	border-radius: 0px 0px 3px 3px;
+}
